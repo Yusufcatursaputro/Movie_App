@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:background="@drawable/card_movie"
+        android:elevation="3dp">
+        <ImageView
+            android:id="@+id/image_movie"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/movie_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/title_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/image_movie"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Venom : The Last Dance"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="7dp"/>
+        <TextView
+            android:id="@+id/time_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1h 49m"
+            android:textSize="8dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/card_time"
+            app:layout_constraintTop_toBottomOf="@id/title_movie"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="7dp"/>
+        <TextView
+            android:id="@+id/rating_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R13+"
+            android:textSize="8dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/card_time"
+            app:layout_constraintTop_toBottomOf="@id/title_movie"
+            app:layout_constraintLeft_toRightOf="@id/time_movie"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
